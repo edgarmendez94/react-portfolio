@@ -25,8 +25,14 @@ export default function PortfolioContainer() {
 
   const handlePageChange = (page) => setCurrentPage(page);
 
+  const styles = {
+    mainStyle: {
+      background: '#7dbbc3',
+    },
+  };
+
   return (
-    <div>
+    <div style={styles.mainStyle}>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
     </div>

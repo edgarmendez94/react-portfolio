@@ -2,16 +2,33 @@ import React from 'react';
 
 export default function Portfolio() {
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+    <div class="mt-6">
+      <article class="message is-dark column-is-4">
+  <div class="message-header">
+    <p>Text editor PWA</p>
+  </div>
+  <div class="message-body">
+   <a>https://github.com/edgarmendez94/text-editor-pwa</a>
+  </div>
+</article>
+
+<article class="message is-dark column-is-4">
+  <div class="message-header">
+    <p>Get pawned: for chess lovers</p>
+  </div>
+  <div class="message-body">
+  <a>https://github.com/edgarmendez94/get-pawned-chess-game-</a>  
+  </div>
+</article>
+
+<article class="message is-dark column-is-4">
+  <div class="message-header">
+    <p>Note app</p>
+  </div>
+  <div class="message-body"> 
+  <a>https://github.com/edgarmendez94/note-taker</a>
+  </div>
+</article>
     </div>
   );
 }

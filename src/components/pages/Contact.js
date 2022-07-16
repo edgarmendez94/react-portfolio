@@ -1,36 +1,39 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import React from 'react';
 
+const styles = {
+  contentStyle: {
+    background: '#7dbbc3',
+  },
+}
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
+  
+    <div class="columns is-mobile is-centered mt-6">
+    <section class="column is-centered is-half">
+    <form class="box">
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+      <input class="input is-hovered" type="text" placeholder="Name"/>
+      </div>
     </div>
+  
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control">
+      <input class="input is-hovered" type="text" placeholder="Email"/>
+      </div>
+    </div>
+  
+    <label class="label">Message</label>
+    <textarea class="textarea is-info" placeholder="Message"></textarea>
+
+    <button class="button is-link is-light">Send</button>
+  </form>
+  </section>
+  
+  </div>
+
   );
 }
-
-function Form() {
-  // Create state variables for the fields in the form
-  // We are also setting their initial values to an empty string
-  const [email, setEmail] = useState('');
-  const [userName, setUserName] = useState('');
-  // TODO: Create a password variable and a function "setPassword" using useState
-
-  const [errorMessage, setErrorMessage] = useState('');
-
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-    // Based on the input type, we set the state of either email, username, and password
-    // TODO: Add an else statement to the end that will set the password to the value of 'inputValue'
-
-    if (inputType === 'email') {
-      setEmail(inputValue);
-    } else if (inputType === 'userName') {
-      setUserName(inputValue);
-    }
-  }};
